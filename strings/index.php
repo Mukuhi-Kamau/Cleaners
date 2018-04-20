@@ -33,6 +33,8 @@ RAM6^-IREZ, R NEB-^6UR,POLICE OFFICER,POLICE,F,Salary,,KES9335400,
 RAM6^-IREZ,   OHPLODUR,MOTOR TRUCK DRIVER,STREETS & SAN,F,Hourly,40,,&euro;356^-030
 WALK></OSZ,   KECAJ,POLICE OFFICER,POLICE,F,Salary,,KES90024090,";
 
+// Added a comment
+
 echo $wambua_corrupted_employees ."</br>";
 //array
 $wambua_corrupted_employees_array=explode(',',$wambua_corrupted_employees);
