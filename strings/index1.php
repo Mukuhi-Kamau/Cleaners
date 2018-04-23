@@ -82,9 +82,7 @@ echo "<td>{$cell2}</td>";
 }
 echo '</table>';
 
-//$try = "jhwvjh21133iu2334rmfnfm243";
-//echo preg_match("/[0-9]/",$try);
-//echo strlen ($wambua_corrupted_employee);
+
 
 
 
