@@ -11,8 +11,8 @@ class Database {
   		}
 
   private function getConnection(){
-    $servername = "localhost";
-    $dbname ="api"
+    $servername = "127.0.0.1";
+    $dbname ="oop"
     $username = "root";
     $password =" ";
     try{
