@@ -11,18 +11,20 @@ class Database {
   		}
 
   private function getConnection(){
-    $servername = "127.0.0.1";
-    $dbname ="oop"
-    $username = "root";
-    $password =" ";
-    try{
-      $DBH = new PDO("mysql :servername=$servername; dbname=$dbname", $username, $password);
+
+    private $hostname = "127.0.0.1";
+    private $dbname ="oop"
+    private $username = "root";
+    private $password ="";
+    private $conn;
+    {
+      $DBH = new PDO("mysql :hostname=$hostname; dbname=$dbname", $username, $password);
 //logging any exceptions into fatal error
       $DBH->setAttribute (PDO:: ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
       return $DBH;
     }
-    catch(PDOException $e){
+    (PDOException $e){
       echo 'ERROR:'. $e ->getMessage();
     }
     //Show data assuming that a table has already been created
@@ -43,7 +45,7 @@ class Database {
     $data = $q->fetch(PDO::FETCH_ASSOC);
     return $data;
 }
-//updatting the table in the database
+//updating the table in the database
   public function update($id,$name,$email,$mobile,$address,$table){
 
     $sql = "UPDATE $table
