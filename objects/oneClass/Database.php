@@ -15,7 +15,7 @@ class Database {
     private $hostname = "127.0.0.1";
     private $dbname ="oop"
     private $username = "root";
-    private $password ="";
+    private $password ="";s
     private $conn;
     {
       $DBH = new PDO("mysql :hostname=$hostname; dbname=$dbname", $username, $password);
